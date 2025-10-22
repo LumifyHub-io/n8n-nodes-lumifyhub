@@ -1,0 +1,19 @@
+{
+	"node": "n8n-nodes-lumifyhub",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Productivity", "Communication"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.lumifyhub.com/integrations/n8n#credentials"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://docs.lumifyhub.com/integrations/n8n"
+			}
+		]
+	},
+	"alias": ["Workspace", "Pages", "Notes", "Knowledge Base"]
+}
