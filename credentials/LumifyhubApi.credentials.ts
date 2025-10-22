@@ -1,5 +1,6 @@
 import type {
 	IAuthenticateGeneric,
+	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 } from 'n8n-workflow';
@@ -8,6 +9,8 @@ export class LumifyhubApi implements ICredentialType {
 	name = 'lumifyhubApi';
 
 	displayName = 'Lumifyhub API';
+
+	icon = { light: 'file:lumifyhub.svg', dark: 'file:lumifyhub.dark.svg' } as const;
 
 	// Link to your community node's README
 	documentationUrl = 'https://docs.lumifyhub.io/integrations/n8n';
@@ -41,6 +44,17 @@ export class LumifyhubApi implements ICredentialType {
 		},
 	};
 
-	// Note: Credential testing requires actually creating a page since we don't have a dedicated health check endpoint
-	// Users can verify credentials by testing the Create Page operation
+	test: ICredentialTestRequest = {
+		request: {
+			baseURL: '={{$credentials.baseUrl}}',
+			url: '/integrations/pages',
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: {
+				title: 'n8n Credential Test',
+			},
+		},
+	};
 }
