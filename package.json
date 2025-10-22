@@ -1,11 +1,17 @@
 {
   "name": "n8n-nodes-lumifyhub",
   "version": "0.1.0",
-  "description": "",
+  "description": "n8n community node for LumifyHub - Create and manage pages in your LumifyHub workspace from any workflow",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://lumifyhub.io",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "n8n",
+    "lumifyhub",
+    "workspace",
+    "automation",
+    "productivity",
+    "pages"
   ],
   "author": {
     "name": "Saad",

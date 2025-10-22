@@ -10,7 +10,7 @@ export class LumifyhubApi implements ICredentialType {
 	displayName = 'Lumifyhub API';
 
 	// Link to your community node's README
-	documentationUrl = 'https://docs.lumifyhub.com/integrations/n8n';
+	documentationUrl = 'https://docs.lumifyhub.io/integrations/n8n';
 
 	properties: INodeProperties[] = [
 		{

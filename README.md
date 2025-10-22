@@ -1,6 +1,6 @@
 # n8n-nodes-lumifyhub
 
-This is an n8n community node. It lets you use [LumifyHub](https://lumifyhub.com) in your n8n workflows.
+This is an n8n community node. It lets you use [LumifyHub](https://lumifyhub.io) in your n8n workflows.
 
 LumifyHub is a collaborative workspace platform for creating and managing pages, notes, databases, and knowledge bases with your team.
 
@@ -46,7 +46,7 @@ To use this node, you need to create API credentials in your LumifyHub workspace
 
 ### Prerequisites
 
-1. Have an active LumifyHub account at [lumifyhub.com](https://lumifyhub.com)
+1. Have an active LumifyHub account at [lumifyhub.io](https://lumifyhub.io)
 2. Be an owner of a workspace (only workspace owners can generate API keys)
 
 ### Setup Instructions
@@ -203,9 +203,9 @@ Automatically save RSS feed items:
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-- [LumifyHub Documentation](https://docs.lumifyhub.com)
-- [LumifyHub n8n Integration Guide](https://docs.lumifyhub.com/integrations/n8n)
-- [LumifyHub API Documentation](https://docs.lumifyhub.com/api)
+- [LumifyHub Documentation](https://docs.lumifyhub.io)
+- [LumifyHub n8n Integration Guide](https://docs.lumifyhub.io/integrations/n8n)
+- [LumifyHub API Documentation](https://docs.lumifyhub.io/api)
 - [Report issues](https://github.com/lumifyhub/n8n-nodes-lumifyhub/issues)
 
 ## Version History
@@ -227,5 +227,5 @@ MIT
 For issues, questions, or feature requests:
 
 - GitHub Issues: [n8n-nodes-lumifyhub/issues](https://github.com/lumifyhub/n8n-nodes-lumifyhub/issues)
-- Email: support@lumifyhub.com
-- Documentation: [docs.lumifyhub.com](https://docs.lumifyhub.com)
+- Email: support@lumifyhub.io
+- Documentation: [docs.lumifyhub.io](https://docs.lumifyhub.io)
