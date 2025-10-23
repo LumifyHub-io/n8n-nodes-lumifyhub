@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LumifyHub-io/n8n-nodes-lumifyhub.git"
+    "url": "git+https://github.com/LumifyHub-io/n8n-nodes-lumifyhub.git"
   },
   "scripts": {
     "build": "n8n-node build",
