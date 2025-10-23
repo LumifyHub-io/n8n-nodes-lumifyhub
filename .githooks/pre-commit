@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# n8n-nodes-lumifyhub pre-commit hook
+# Auto-fixes linting issues and verifies code quality before commits
+
+echo "🔧 Running auto-fix for linting issues..."
+
+# Run lint:fix to automatically fix what we can
+npm run lint:fix
+
+# Check if any files were modified by lint:fix
+# If so, stage them so they're included in the commit
+MODIFIED_FILES=$(git diff --name-only nodes/ credentials/)
+if [ -n "$MODIFIED_FILES" ]; then
+  echo "✨ Auto-fixed linting issues in:"
+  echo "$MODIFIED_FILES"
+  echo ""
+  git add $MODIFIED_FILES
+fi
+
+echo "🔍 Running final lint check..."
+
+# Run linter to check if there are any remaining errors
+npm run lint
+
+# Check if linter passed
+if [ $? -ne 0 ]; then
+  echo ""
+  echo "❌ Linting failed! Some errors couldn't be auto-fixed."
+  echo "💡 Please fix the remaining errors manually."
+  echo ""
+  exit 1
+fi
+
+echo "✅ All checks passed!"
+exit 0
+
