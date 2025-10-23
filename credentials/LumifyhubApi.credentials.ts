@@ -13,7 +13,7 @@ export class LumifyhubApi implements ICredentialType {
 	icon = { light: 'file:lumifyhub.svg', dark: 'file:lumifyhub.dark.svg' } as const;
 
 	// Link to your community node's README
-	documentationUrl = 'https://docs.lumifyhub.io/integrations/n8n';
+	documentationUrl = 'https://lumifyhub.io/n8n-docs';
 
 	properties: INodeProperties[] = [
 		{

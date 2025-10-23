@@ -40,6 +40,14 @@ npm install n8n-nodes-lumifyhub
 
 - **Create**: Create a new page in your LumifyHub workspace
 
+### Database Resource
+
+- **Create Row**: Create a new row in a database with dynamic property fields
+- **Get Rows**: Get all rows from a database data source
+- **Get Row**: Get a single row by ID
+- **Update Row**: Update an existing row's properties
+- **Delete Row**: Delete a row by ID
+
 ## Credentials
 
 To use this node, you need to create API credentials in your LumifyHub workspace:
@@ -66,6 +74,7 @@ To use this node, you need to create API credentials in your LumifyHub workspace
 4. Save the credential
 
 **Notes**:
+
 - The workspace ID is automatically determined from your API key, so you don't need to provide it separately
 - The Base URL defaults to production (`https://lumifyhub.io/api/v1`) but can be changed for local development or self-hosted instances
 
@@ -161,6 +170,7 @@ Automatically save RSS feed items:
 **Error**: `Authentication failed: Invalid API key`
 
 **Solutions**:
+
 - Verify your API key is correct (no extra spaces)
 - Check that the API key hasn't been revoked
 - Ensure you're using the correct workspace
@@ -171,6 +181,7 @@ Automatically save RSS feed items:
 **Error**: `Failed to create page: Invalid parent_page_id`
 
 **Solutions**:
+
 - Verify the parent page ID exists and belongs to your workspace
 - Leave parent_page_id empty to create a root-level page
 - Ensure you have permission to create pages in this workspace
@@ -178,6 +189,7 @@ Automatically save RSS feed items:
 **Error**: `Failed to create page: Title is required`
 
 **Solutions**:
+
 - Ensure the Title field is not empty
 - Check that your expression is evaluating to a string
 - Verify the data from previous nodes is available
@@ -187,6 +199,7 @@ Automatically save RSS feed items:
 **Error**: `Content exceeds maximum size of 1MB`
 
 **Solutions**:
+
 - Reduce the content size
 - Split content across multiple pages
 - Consider storing large content externally and linking to it
@@ -196,6 +209,7 @@ Automatically save RSS feed items:
 **Error**: `Too many requests`
 
 **Solutions**:
+
 - Add a delay between requests using the Wait node
 - Reduce workflow execution frequency
 - Contact LumifyHub support for higher rate limits
@@ -203,12 +217,19 @@ Automatically save RSS feed items:
 ## Resources
 
 - [n8n community nodes documentation](https://docs.n8n.io/integrations/#community-nodes)
-- [LumifyHub Documentation](https://docs.lumifyhub.io)
-- [LumifyHub n8n Integration Guide](https://docs.lumifyhub.io/integrations/n8n)
+- [LumifyHub n8n Integration Guide](https://lumifyhub.io/n8n-docs)
 - [LumifyHub API Documentation](https://docs.lumifyhub.io/api)
 - [Report issues](https://github.com/lumifyhub/n8n-nodes-lumifyhub/issues)
 
 ## Version History
+
+### 0.2.0 (Database Operations)
+
+- ✨ Create, read, update, and delete database rows
+- 🔄 Dynamic property fields based on database schema
+- 🎯 Automatic type conversion and validation
+- 🔍 Get all rows from a data source
+- 📋 Support for all property types (text, number, select, date, etc.)
 
 ### 0.1.0 (Initial Release)
 
@@ -228,4 +249,4 @@ For issues, questions, or feature requests:
 
 - GitHub Issues: [n8n-nodes-lumifyhub/issues](https://github.com/lumifyhub/n8n-nodes-lumifyhub/issues)
 - Email: support@lumifyhub.io
-- Documentation: [docs.lumifyhub.io](https://docs.lumifyhub.io)
+- Documentation: [lumifyhub.io/n8n-docs](https://lumifyhub.io/n8n-docs)

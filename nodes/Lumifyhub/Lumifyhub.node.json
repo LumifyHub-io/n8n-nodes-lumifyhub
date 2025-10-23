@@ -6,12 +6,12 @@
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://docs.lumifyhub.io/integrations/n8n#credentials"
+				"url": "https://lumifyhub.io/n8n-docs#credentials"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://docs.lumifyhub.io/integrations/n8n"
+				"url": "https://lumifyhub.io/n8n-docs"
 			}
 		]
 	},
