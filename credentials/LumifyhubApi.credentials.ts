@@ -47,14 +47,8 @@ export class LumifyhubApi implements ICredentialType {
 	test: ICredentialTestRequest = {
 		request: {
 			baseURL: '={{$credentials.baseUrl}}',
-			url: '/integrations/pages',
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: {
-				title: 'n8n Credential Test',
-			},
+			url: '/integrations/auth/verify',
+			method: 'GET',
 		},
 	};
 }
