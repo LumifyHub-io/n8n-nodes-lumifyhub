@@ -53,9 +53,5 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
-  },
-  "dependencies": {
-    "ajv": "^8.17.1",
-    "ajv-keywords": "^5.1.0"
   }
 }
