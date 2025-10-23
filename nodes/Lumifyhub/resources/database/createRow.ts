@@ -7,7 +7,7 @@ const showOnlyForCreateRow = {
 
 export const databaseCreateRowDescription: INodeProperties[] = [
 	{
-		displayName: 'Data Source',
+		displayName: 'Data Source Name or ID',
 		name: 'data_source_selector',
 		type: 'options',
 		default: '',
@@ -18,7 +18,7 @@ export const databaseCreateRowDescription: INodeProperties[] = [
 		typeOptions: {
 			loadOptionsMethod: 'getDataSources',
 		},
-		description: 'Select the data source to create a row in',
+		description: 'Select the data source to create a row in. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 	},
 	{
 		displayName: 'Database ID',
@@ -80,12 +80,12 @@ export const databaseCreateRowDescription: INodeProperties[] = [
 				displayName: 'Property',
 				values: [
 					{
-						displayName: 'Property',
+						displayName: 'Property Name or ID',
 						name: 'propertyId',
 						type: 'options',
 						default: '',
 						required: true,
-						description: 'Select the property to set',
+						description: 'Select the property to set. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 						typeOptions: {
 							loadOptionsMethod: 'getDataSourceProperties',
 							loadOptionsDependsOn: ['data_source_selector'],

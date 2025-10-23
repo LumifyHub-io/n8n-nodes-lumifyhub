@@ -52,12 +52,12 @@ export const databaseUpdateRowDescription: INodeProperties[] = [
 				displayName: 'Property',
 				values: [
 					{
-						displayName: 'Property',
+						displayName: 'Property Name or ID',
 						name: 'propertyId',
 						type: 'options',
 						default: '',
 						required: true,
-						description: 'Select the property to update',
+						description: 'Select the property to update. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 						typeOptions: {
 							loadOptionsMethod: 'getRowProperties',
 							loadOptionsDependsOn: ['row_id'],

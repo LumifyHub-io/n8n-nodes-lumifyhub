@@ -98,7 +98,7 @@ export class Lumifyhub implements INodeType {
 					console.error('Failed to load data sources:', error);
 					return [
 						{
-							name: 'Error loading data sources',
+							name: 'Error Loading Data Sources',
 							value: '',
 							description: 'Please check your API credentials and try again',
 						},
@@ -122,7 +122,7 @@ export class Lumifyhub implements INodeType {
 					if (!dataSourceSelector) {
 						return [
 							{
-								name: 'Please select a data source first',
+								name: 'Please Select a Data Source First',
 								value: '',
 							},
 						];
@@ -162,7 +162,7 @@ export class Lumifyhub implements INodeType {
 					console.error('Failed to load properties:', error);
 					return [
 						{
-							name: 'Error loading properties',
+							name: 'Error Loading Properties',
 							value: '',
 							description: 'Please check your data source selection and try again',
 						},
@@ -186,7 +186,7 @@ export class Lumifyhub implements INodeType {
 					if (!rowId) {
 						return [
 							{
-								name: 'Please enter a Row ID first',
+								name: 'Please Enter a Row ID First',
 								value: '',
 							},
 						];
@@ -222,7 +222,7 @@ export class Lumifyhub implements INodeType {
 					console.error('Failed to load row properties:', error);
 					return [
 						{
-							name: 'Error loading properties',
+							name: 'Error Loading Properties',
 							value: '',
 							description: 'Please check the Row ID and try again',
 						},

@@ -7,7 +7,7 @@ const showOnlyForGetRows = {
 
 export const databaseGetRowsDescription: INodeProperties[] = [
 	{
-		displayName: 'Data Source',
+		displayName: 'Data Source Name or ID',
 		name: 'data_source_selector',
 		type: 'options',
 		default: '',
@@ -18,7 +18,7 @@ export const databaseGetRowsDescription: INodeProperties[] = [
 		typeOptions: {
 			loadOptionsMethod: 'getDataSources',
 		},
-		description: 'Select the data source to get rows from',
+		description: 'Select the data source to get rows from. Choose from the list, or specify an ID using an <a href="https://docs.n8n.io/code/expressions/">expression</a>.',
 	},
 	{
 		displayName: 'Database ID',

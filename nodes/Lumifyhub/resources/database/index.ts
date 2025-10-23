@@ -32,14 +32,14 @@ export const databaseDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Rows',
-				value: 'getRows',
-				action: 'Get all database rows',
-				description: 'Get all rows from a database',
+				name: 'Delete Row',
+				value: 'deleteRow',
+				action: 'Delete a database row',
+				description: 'Delete a row by ID',
 				routing: {
 					request: {
-						method: 'GET',
-						url: '=/integrations/databases/{{$parameter["database_id"]}}/rows',
+						method: 'DELETE',
+						url: '=/integrations/rows/{{$parameter["row_id"]}}',
 					},
 				},
 			},
@@ -56,6 +56,18 @@ export const databaseDescription: INodeProperties[] = [
 				},
 			},
 			{
+				name: 'Get Rows',
+				value: 'getRows',
+				action: 'Get all database rows',
+				description: 'Get all rows from a database',
+				routing: {
+					request: {
+						method: 'GET',
+						url: '=/integrations/databases/{{$parameter["database_id"]}}/rows',
+					},
+				},
+			},
+			{
 				name: 'Update Row',
 				value: 'updateRow',
 				action: 'Update a database row',
@@ -63,18 +75,6 @@ export const databaseDescription: INodeProperties[] = [
 				routing: {
 					request: {
 						method: 'PATCH',
-						url: '=/integrations/rows/{{$parameter["row_id"]}}',
-					},
-				},
-			},
-			{
-				name: 'Delete Row',
-				value: 'deleteRow',
-				action: 'Delete a database row',
-				description: 'Delete a row by ID',
-				routing: {
-					request: {
-						method: 'DELETE',
 						url: '=/integrations/rows/{{$parameter["row_id"]}}',
 					},
 				},
