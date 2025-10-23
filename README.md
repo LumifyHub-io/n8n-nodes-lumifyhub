@@ -223,7 +223,7 @@ Automatically save RSS feed items:
 
 ## Version History
 
-### 0.2.0 (Database Operations)
+### 0.1.2 (Database Operations)
 
 - ✨ Create, read, update, and delete database rows
 - 🔄 Dynamic property fields based on database schema
