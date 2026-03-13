@@ -93,9 +93,7 @@ export class Lumifyhub implements INodeType {
 					);
 
 					return options;
-				} catch (error) {
-					// If API call fails, return empty array with error message
-					console.error('Failed to load data sources:', error);
+				} catch {
 					return [
 						{
 							name: 'Error Loading Data Sources',
@@ -158,8 +156,7 @@ export class Lumifyhub implements INodeType {
 						);
 
 					return options;
-				} catch (error) {
-					console.error('Failed to load properties:', error);
+				} catch {
 					return [
 						{
 							name: 'Error Loading Properties',
@@ -218,8 +215,7 @@ export class Lumifyhub implements INodeType {
 						);
 
 					return options;
-				} catch (error) {
-					console.error('Failed to load row properties:', error);
+				} catch {
 					return [
 						{
 							name: 'Error Loading Properties',

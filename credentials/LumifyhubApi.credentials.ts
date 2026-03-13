@@ -30,7 +30,8 @@ export class LumifyhubApi implements ICredentialType {
 			name: 'baseUrl',
 			type: 'string',
 			default: 'https://lumifyhub.io/api/v1',
-			description: 'The base URL for the LumifyHub API (use http://localhost:3000/api/v1 for local development)',
+			description:
+				'The base URL for the LumifyHub API (use http://localhost:3001/api/v1 for local development)',
 			placeholder: 'https://lumifyhub.io/api/v1',
 		},
 	];

@@ -70,7 +70,7 @@ To use this node, you need to create API credentials in your LumifyHub workspace
 
 1. In n8n, create a new credential of type **Lumifyhub API**
 2. Paste your API key into the **API Key** field
-3. (Optional) For local development, change the **Base URL** to `http://localhost:3000/api/v1`
+3. (Optional) For local development, change the **Base URL** to `http://localhost:3001/api/v1`
 4. Save the credential
 
 **Notes**:
@@ -113,11 +113,11 @@ Content: {{$json["body"]}}
 
 If you're testing against a local LumifyHub development server:
 
-1. Start your local LumifyHub server: `npm run dev` (typically runs on `http://localhost:3000`)
+1. Start your local LumifyHub server: `npm run dev` (typically runs on `http://localhost:3001`)
 2. Generate an API key from your local instance's workspace settings
 3. In n8n credentials, set:
    - **API Key**: Your local API key
-   - **Base URL**: `http://localhost:3000/api/v1`
+   - **Base URL**: `http://localhost:3001/api/v1`
 4. Test the Create Page operation
 
 This allows you to develop and test n8n workflows against your local LumifyHub instance before deploying to production.
