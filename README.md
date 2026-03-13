@@ -11,6 +11,7 @@ LumifyHub is a collaborative workspace platform for creating and managing pages,
 [Credentials](#credentials) •
 [Compatibility](#compatibility) •
 [Usage](#usage) •
+[Publishing](#publishing-to-npm) •
 [Example Workflows](#example-workflows) •
 [Troubleshooting](#troubleshooting) •
 [Resources](#resources)
@@ -121,6 +122,24 @@ If you're testing against a local LumifyHub development server:
 4. Test the Create Page operation
 
 This allows you to develop and test n8n workflows against your local LumifyHub instance before deploying to production.
+
+## Publishing to npm
+
+To publish a new version:
+
+1. Make your changes and commit them
+2. Bump the version in `package.json`
+3. Commit the version bump and push
+4. Authenticate with npm: `echo "//registry.npmjs.org/:_authToken=<YOUR_NPM_TOKEN>" > .npmrc`
+5. Build and publish:
+   ```bash
+   npm run build
+   npm publish --ignore-scripts
+   ```
+6. Remove the `.npmrc` file after publishing
+7. If submitting to n8n's community node registry, resubmit for review after publishing
+
+> **Note**: The `npm run release` command uses `release-it` which requires an interactive terminal. Use `npm publish --ignore-scripts` to bypass the interactive prompt when publishing from non-interactive environments.
 
 ## Example Workflows
 
